@@ -17,7 +17,7 @@ class CypressCustomReporter {
 
         // Load custom data if available
         try {
-            const data = fs.readFileSync('../../custom.ih', 'utf8');
+            const data = fs.readFileSync('../custom.ih', 'utf8');
             this.customData = data;
         } catch (err) {
             console.error('Error reading custom data:', err.message);
